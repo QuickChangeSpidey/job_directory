@@ -3,7 +3,7 @@
 
   angular
     .module('jobs')
-    .controller('JobsListController', JobsController);
+    .controller('JobsListController', JobsListController);
 
   JobsListController.$inject = ['JobsService'];
 

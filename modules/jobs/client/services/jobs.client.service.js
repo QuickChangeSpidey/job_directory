@@ -5,9 +5,9 @@
     .module('jobs.services')
     .factory('JobsService', JobsService);
 
-  ArticlesService.$inject = ['$resource', '$log'];
+  JobsService.$inject = ['$resource', '$log'];
 
-  function ArticlesService($resource, $log) {
+  function JobsService($resource, $log) {
     var Job = $resource('/api/jobs/:jobId', {
      jobId: '@_id'
     }, {

@@ -15,8 +15,8 @@
         template: '<ui-view/>'
       })
       .state('jobs.list', {
-        url: '',
-        templateUrl: '/modules/articles/client/views/list-jobs.client.view.html',
+        url: '/jobs/list',
+        templateUrl: '/modules/jobs/client/views/list-jobs.client.view.html',
         controller: 'JobsListController',
         controllerAs: 'vm',
         data: {
@@ -24,7 +24,7 @@
         }
       })
       .state('jobs.view', {
-        url: '/:jobId',
+        url: '/jobs/:jobId',
         templateUrl: '/modules/jobs/client/views/view-job.client.view.html',
         controller: 'JobsController',
         controllerAs: 'vm',
